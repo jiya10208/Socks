@@ -1,0 +1,27 @@
+.nav {
+  background-color: lightblue;
+  height: 2.4rem;
+}
+
+.nav,
+.nav ul {
+  /* margin: 0; */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.nav li {
+  text-transform: capitalize;
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black;
+}
+.active {
+  color: rgb(12, 65, 12) !important;
+  font-style: italic;
+  font-weight: 600;
+}

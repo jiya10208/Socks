@@ -1,0 +1,38 @@
+.dark_body {
+  min-height: 100vh;
+  /* background: linear-gradient(45deg, #002523, #2d002c); */
+  /* z-index: -3; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.7em 2.22em;
+  border-radius: 1em;
+
+  background: linear-gradient(to top right, #08f5f1, #0303c6);
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.05);
+  border-radius: 1.2rem;
+  background: linear-gradient(to top right, #1bccfd, #03e1ce);
+  z-index: -1;
+}
+
+button:hover {
+  z-index: 0;
+  color: rgb(234, 234, 234);
+  box-shadow: 2px 0 10px #0a4fbe, -25px 0 100px rgb(5, 91, 91);
+}
